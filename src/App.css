@@ -1,0 +1,674 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body
+{
+background: #fafafa;
+margin: 0px;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+
+}
+
+footer 
+{
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    border: 0 solid #000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+a, h4 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+
+main, nav, div
+{
+   
+        -webkit-box-align: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        border: 0 solid #000;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    
+}
+
+.pride 
+{
+        height: 80px;
+        background-color: #fff;
+        border-bottom: 1px solid rgba(0,0,0,.0975);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        -webkit-transition: height .2s ease-in-out;
+        transition: height .2s ease-in-out;
+        
+}
+
+.gluttony
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 80px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 1010px;
+    padding: 18px 20px;
+    margin-left: 44px;
+    -webkit-transition: height .2s ease-in-out;
+    transition: height .2s ease-in-out;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+}
+
+.gluttony:hover
+{
+    cursor:pointer
+}
+
+.envy {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+}
+
+.wrath {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 44px 0;
+    overflow: hidden;
+}
+
+.lust 
+{
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin: 80px auto;
+    max-width: 935px;
+    overflow: hidden;
+    max-width: 388px;
+}
+
+.famine
+{
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+    -ms-flex-order: 5;
+    order: 5;
+    padding: 0 20px;
+}
+
+.pestilence
+{
+    background-color: #fafafa;
+}
+
+.death
+{
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 auto;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 935px
+}
+
+.war 
+{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 38px 0;
+}
+
+.abuse
+{
+    color: #999;
+    margin: 0;
+    border: 0;    
+    vertical-align: baseline;
+}
+
+.decay
+{
+    max-width: 100%;
+    
+}
+
+.outbreak
+{
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;    
+    margin-bottom: 5px;
+    padding: 0;
+    
+}
+
+.conjuring 
+{
+    display: inline-block;
+    margin-bottom: 7px;
+    margin-right: 16px;
+    color: #003569;
+    cursor: pointer;
+}
+
+.conjuring:hover
+{
+    opacity: 0.7;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 3.5px;
+    padding-inline-start: 40px;
+}
+
+@media only screen and (max-width: 414px)
+{
+.gluttony
+{
+    margin-left: -86px;    
+}
+
+.lust 
+{
+    max-width: fit-content;
+    margin-top: 32px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+footer 
+{
+    display:none;
+}
+
+}
+
+@media only screen and (width: 320px)
+{
+    .gluttony
+    {
+        margin-left: -56px;
+    }
+    .lust 
+{
+    max-width: fit-content;
+    margin-top: 17px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    margin-bottom: 0px;
+}
+.pride
+{
+ margin-top: 0px;
+}
+
+
+
+}
+
+
+.hiv /*Igw0e*/
+{
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+}
+
+.aids /*IwRSH*/
+{
+        -webkit-box-align: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+    
+}
+
+.leukemia /*vwCYK*/
+{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 0;
+    min-width: 0;
+}
+
+.nausea
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hpv /*rBNOH*/
+{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.cacner /*eGOV_*/
+{
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.ebola /*4EzTM*/
+{
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+
+
+.plague /*MGdpg*/
+{
+    margin-bottom: 16px;
+}
+ /*kEKum*/
+.lri
+{
+    margin-top: 24px;
+}
+
+.copd /*6wM3Z*/
+{
+    margin-left: 44px;
+    margin-right: 44px;
+}
+
+.pain
+{
+    font-size: 16px;
+    line-height: 24px;
+    margin: -6px 0;
+    color: #262626;
+    display: block;
+    font-weight: 600;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.misery
+{
+   color: #999; 
+    font-size: 14px;
+    line-height: 18px;
+    margin: -3px 0 -4px;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    
+}
+
+.exposure 
+{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid #efefef;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-right: 8px; 
+    position: relative;
+    background: #fafafa;
+    outline: 0!important;
+    margin: 5px 5px;
+}
+
+.deceive
+{
+    border-radius: 4px;
+    border: 1px solid #efefef;
+    color: #262626;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0;
+    overflow: visible;
+    padding: 4px 12px;
+    background: #fafafa;
+    border: 0;    
+    width: 100%;
+    outline: 0!important;      
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.exposure:focus-within
+{
+    border-radius: 6px;
+    border: 1px solid #bababa;  
+}
+
+::placeholder
+{
+    opacity: 0.7;
+    font-size: 12px;
+    letter-spacing: 0.1;
+}
+
+
+
+.treason 
+{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    bottom: 0;
+    color: #c7c7c7;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 10px;
+    left: 0;
+    margin: 3px 9px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-transition: -webkit-transform ease-out .1s;
+    transition: transform ease-out .1s;
+    transition: transform ease-out .1s,-webkit-transform ease-out .1s;    
+}
+
+.poison
+{
+    background-color: #3897f0;
+    border: 1px solid #3897f0;
+    border-radius: 4px;
+    color: #fff;
+    position: relative;
+    outline: none;
+    margin-top: 8px;    
+    
+}
+
+.deadly {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    padding: 5px 9px;
+    text-align: center;
+    text-transform: inherit;
+    text-overflow: ellipsis;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: auto;  
+    
+}
+
+
+
+.button
+{
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+        font-size: 14px;    
+        line-height: 18px;
+}
+
+button:disabled
+{
+    opacity: 0.5;
+    cursor: default;   
+}
+
+button:active
+{   
+    
+    opacity: 0.9;
+}
+.sloth 
+{
+    height: 50px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    background-color: #fafafa;
+    border-top: 1px solid #e6e6e6;
+}
+
+
+.sin {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 100%;
+    padding-right: 8px;
+    vertical-align: middle;
+}
+
+.coil
+{
+    color: #262626;
+    background: 0 0;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font: bold;
+    user-select: none;
+
+    font-weight: 600;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    outline:0;
+    margin-right: -50px;
+    margin-bottom: -10px;
+}
+
+.coil:hover
+{
+    cursor: pointer;
+}
+
+.coil:active
+{
+    opacity: 0.7;
+}
+
+.coil:disabled
+{
+    display: none;
+    opacity: 0;
+}
+
+@media only screen and (width: 375px)
+{
+
+
+   
+}
+
+@media only screen and (width: 414px)
+{
+    
+    .sloth
+    {
+        display: none;
+        background: #fafafa;
+    }
+}
+
+@media only screen and (width: 320px)
+{
+    .sloth
+    {
+        display: none;
+    }
+}
+
+

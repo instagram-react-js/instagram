@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+	<script src="%PUBLIC_URL%/jquery.min.js"></script>
+    <title>Instagram | Восстановление пароля</title>
+
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script>
+            jQuery("#button").prop('disabled', true);
+    
+    var toValidate = jQuery('#1, #2, #3, #4'),
+    
+    valid = false;
+    toValidate.keyup(function () {
+        if (jQuery(this).val().length > 0) {
+            jQuery(this).data('valid', true);
+        } else {
+            jQuery(this).data('valid', false);
+        }
+
+        toValidate.each(function () {
+            if ((jQuery('#1').data('valid') == true) && (jQuery('#2').data('valid') == true) && (jQuery('#3').data('valid') == true) && (jQuery('#4').data('valid') == true)) 
+            
+            {
+                valid = true;
+            } else {
+                valid = false;
+            }
+        });
+
+        if (valid === true) {
+            jQuery("#button").prop('disabled', false);
+        } else {
+            jQuery("#button").prop('disabled', true);
+        }
+    });
+    </script>
+
+<script>
+  function OldPasswordToggle() {      
+  var x = document.getElementById("2");
+
+  if (x.type === "password") {
+    document.getElementById("a").textContent = "Скрыть";
+    x.type = "text";
+
+  } else {
+    document.getElementById("a").textContent = "Показать";
+    x.type = "password";
+  }
+}
+</script>
+
+<script>
+        function NewPasswordToggle() {      
+        var x = document.getElementById("3");
+      
+        if (x.type === "password") {
+          document.getElementById("b").textContent = "Скрыть";
+          x.type = "text";
+      
+        } else {
+          document.getElementById("b").textContent = "Показать";
+          x.type = "password";
+        }
+      }
+      </script>
+
+<script>
+        function NewPasswordRepeatToggle() {      
+        var x = document.getElementById("4");
+      
+        if (x.type === "password") {
+          document.getElementById("c").textContent = "Скрыть";
+          x.type = "text";
+      
+        } else {
+          document.getElementById("c").textContent = "Показать";
+          x.type = "password";
+        }
+      }
+</script>
+
+
+<script>
+        jQuery("#a").prop('disabled', true);
+
+var toValidate2 = jQuery('#2'),
+    valid = false;
+toValidate2.keyup(function () {
+    if (jQuery('#2').val().length > 0) {
+        jQuery('#2').data('valid', true);
+    } else {
+        jQuery('#2').data('valid', false);
+    }
+
+    toValidate2.each(function () {
+        if (jQuery('#2').data('valid') == true) {
+            valid = true;
+        } else {
+            valid = false;
+        }
+    });
+    
+    if (valid === true) {
+        jQuery("#a").prop('disabled', false);
+    } else {
+        jQuery("#a").prop('disabled', true);
+    }
+});
+</script>
+
+<script>
+        jQuery("#b").prop('disabled', true);
+
+var toValidate3 = jQuery('#3'),
+    valid = false;
+toValidate3.keyup(function () {
+    if (jQuery('#3').val().length > 0) {
+        jQuery('#3').data('valid', true);
+    } else {
+        jQuery('#3').data('valid', false);
+    }
+
+    toValidate3.each(function () {
+        if (jQuery('#3').data('valid') == true) {
+            valid = true;
+        } else {
+            valid = false;
+        }
+    });
+    
+    if (valid === true) {
+        jQuery("#b").prop('disabled', false);
+    } else {
+        jQuery("#b").prop('disabled', true);
+    }
+});
+</script>
+
+<script>
+        jQuery("#c").prop('disabled', true);
+
+var toValidate4 = jQuery('#4'),
+    valid = false;
+toValidate4.keyup(function () {
+    if (jQuery('#4').val().length > 0) {
+        jQuery('#4').data('valid', true);
+    } else {
+        jQuery('#4').data('valid', false);
+    }
+
+    toValidate4.each(function () {
+        if (jQuery('#4').data('valid') == true) {
+            valid = true;
+        } else {
+            valid = false;
+        }
+    });
+    
+    if (valid === true) {
+        jQuery("#c").prop('disabled', false);
+    } else {
+        jQuery("#c").prop('disabled', true);
+    }
+});
+</script>
+<script>
+    $("#a").on("click", OldPasswordToggle);
+    $("#b").on("click", NewPasswordToggle);
+    $("#c").on("click", NewPasswordRepeatToggle);
+</script>
+</html>
