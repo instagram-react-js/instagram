@@ -84,7 +84,49 @@ function sendEmail(e) {
                     
             </div>            
             </div>
-           
+            <div className="famine pestilence">
+        <div className="death war">
+            <nav className="decay">
+                <ul className="outbreak">
+                    <li className="conjuring" >
+                        <a >О НАС</a>
+                    </li>
+                    <li className="conjuring">
+                            <a>ПОДДЕРЖКА</a>
+                        </li>
+                        <li className="conjuring">
+                                <a>ПРЕССА</a>
+                            </li>
+                            <li className="conjuring">
+                                    <a>API</a>
+                                </li>
+                                <li className="conjuring">
+                                        <a>ВАКАНСИИ</a>
+                                    </li>
+                                    <li className="conjuring">
+                                            <a>КОНФИДЕНЦИАЛЬНОСТЬ</a>
+                                        </li>
+                                        <li className="conjuring">
+                                                <a>УСЛОВИЯ</a>
+                                            </li>
+                                            <li className="conjuring">
+                                                    <a>ДИРЕКТОРИЯ</a>
+                                                </li>
+                                                <li className="conjuring">
+                                                        <a>ПРОФИЛИ</a>
+                                                    </li>
+                                                    <li className="conjuring">
+                                                            <a>ХЭШТЕГИ</a>
+                                                        </li>
+                                                        <li className="conjuring">
+                                                                <a>ЯЗЫК</a>
+                                                            </li>
+                                                            
+                </ul>
+                <span className="abuse">© Instagram от Facebook, 2021 </span>
+            </nav>
+        
+        </div>
     </div>
         </div>
 
